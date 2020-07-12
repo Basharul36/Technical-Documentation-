@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Technical Documentation</title>
+  <style>
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <nav class="topnav" id="navbar">
+              <header></header>
+              <a href="#Introduction" class="nav-link">Introduction</a>
+              <a href="#Mongo_DB" class="nav-link">Mongo DB</a>
+              <a href="#Express_JS" class="nav-link">Express JS</a>
+              <a href="#React_JS" class="nav-link">React JS</a>
+              <a href="#Node_JS" class="nav-link">Node JS</a>
+          </nav>
+        </div>
+      </div>
+
+    <div class="rightcolumn">
+      <div class="header">
+        <img id="header-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/120725588/original/40d21d0998c6b6ca269783e0d211d6a6bc5d8d43/write-technical-documentation-for-electronic-and-electrical-projects.jpg" style="height:150px;width:280px;">
+        <h1>MERN Stack Documentation</h1>
+        <p>A simple way to understand MERN stack.</p>
+
+      </div>
+      <main id="main-doc">
+        <div class="card">
+          <section class="main-section" id="Introduction">
+            <header><h2>Introduction<h2></header>
+            <code></code>
+            <h4>MERN Stack</h4>
+            <center><div class="fakeimg" style="height:300px;"><center><img src="images/MERN.jpg"></center></div></center>
+            <p>MERN Stack: MERN Stack is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js. It is designed to make the development process smoother and easier.<br>
+            Each of these 4 powerful technologies provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications.</p>
+           </section>
+        </div>
+        <div class="card" id="mongodb">
+          <section class="main-section" id="Mongo_DB">
+            <header><h2>Mongo DB</h2></header>
+            <code></code>
+            <h4>Back-End Framework</h4>
+            <center><div class="fakeimg" style="height:300px;"><center><img src="images/MongoDB.jpg"></center></div></center>
+              <p>
+              MongoDB is a NoSQL database where each record is a document comprising of key-value pairs that are similar to JSON (JavaScript Object Notation) objects. MongoDB is flexible and allows its users to create schema, databases, tables, etc. Documents that are identifiable by a primary key make up the basic unit of MongoDB. Once MongoDB is installed, users can make use of Mongo shell as well. Mongo shell provides a JavaScript interface through which the users can interact and carry out operations (eg: querying, updating records, deleting records).</p>
+              <br><b>Why use MongoDB?</b>
+              <ul>
+                <li>Fast – Being a document-oriented database, easy to index documents. Therefore a faster response.</li>
+                <li>Scalability – Large data can be handled by dividing it into several machines.</li>
+                <li>Use of JavaScript – MongoDB uses JavaScript which is the biggest advantage.</li>
+                <li>Schema Less – Any type of data in a separate document.</li>
+                <li>Data stored in the form of JSON –<br>
+                  <ol>
+                    <li>Objects, Object Members, Arrays, Values and Strings</li>
+                    <li>JSON syntax is very easy to use.</li>
+                    <li>JSON has a wide range of browser compatibility.</li>
+                    <li>Sharing Data: Data of any size and type(video, audio) can be shared easily.</li>
+                  </ol>
+                </li>
+                <li>Simple Environment Setup – Its really simple to set up MongoDB.</li>
+                <li>Flexible Document Model – MongoDB supports document-model(tables, schemas, coloumns & SQL) which is faster and easier.</li>
+              </ul>
+              <br><b>Example:</b>
+              <div class="Example">
+                <ol>
+                  <li><b>Creating a database: Simply done using a “use” command:</b><br><p class="container" style="font-family:monospace;">use database_name;</p></li>
+                  <li><b>Creating a table: If the collection/table doesn’t exist then a new collection/table will be created:</b><br><p class="container" style="font-family:monospace;">db.createCollection("collection_name");</p></li>
+                  <li><b>Inserting records into the collection:</b><br><p class="container" style="font-family:monospace;">db.collection_name.insert
+                  <br>(
+                  <br>{
+                          <br>"id" : 1,
+                          <br>"Name" : "Klaus",
+                                  <br>"Department": "Technical",
+                                  <br>"Organization": "Geeks For Geeks"
+                      <br>}
+                  <br>);</p></li>
+                  <li><b>Querying a document:</b><br><p class="container" style="font-family:monospace;">db.collection_name.find({Name : "Klaus"}).forEach(printjson);</p></li>
+                </ol>
+                <center><img style="height:270px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004124452/3710.png"></center>
+              </div>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section" id="Express_JS">
+              <header><h2>Express JS<h2></header>
+              <code></code>
+              <h4>Back-End Framework</h4>
+              <center><div class="fakeimg" style="height:300px;"><center><img src="images/Express.png"></center></div></center>
+              <p>Express is a Node.js framework. Rather than writing the code using Node.js and creating loads of Node modules, Express makes it simpler and easier to write the back-end code. Express helps in designing great web applications and APIs. Express supports many middlewares which makes the code shorter and easier to write.</p>
+              <br><b>Why use Express?</b>
+              <ul>
+                <li>Asynchronous and Single-threaded.</li>
+                <li>Efficient, fast & scalable</li>
+                <li>Has the biggest community for Node.js</li>
+                <li>Express promotes code reusability with its built-in router.</li>
+                <li>Robust API</li>
+              </ul>
+              <br><b>Example:</b>
+              <div class="Example">
+                <ol>
+                  <li><b>Create a new folder to start your express project and type below command in the command prompt to initialize a package.json file. Accept the default settings and continue.</b><br><p class="container" style="font-family:monospace;">npm init</p></li>
+                  <li><b>Then install express by typing the below command and hit enter. Now finally create a file inside the directory named index.js.</b><br><p class="container" style="font-family:monospace;">npm install express --save</p><br><center><img style="height:100px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004125223/3810.png"></center></li><br>
+                  <li><b>Now type in the following in index.js to create a sample server.</b><br><p class="container" style="font-family:monospace;">"const express = require('express'),
+                    <br>http = require('http');
+
+                    <br>const hostname = 'localhost';
+                    <br>const port = 8080;
+                    <br>const app = express();
+                    <br>
+                    <br>app.use((req, res) => {
+                    <br>console.log(req.headers);
+                    <br>res.statusCode = 200;
+                    <br>res.setHeader('Content-Type', 'text/html');
+                    <br>res.end('This is a test server');
+
+                    <br>});
+                      <br>const sample_server = http.createServer(app);
+
+                      <br>sample_server.listen(port, hostname, () => {
+                      <br>console.log(`Server running at http://${hostname}:${port}/`);
+                      <br>});" }
+                      <br>);
+                    </p></li>
+                  <li><b>Update the “scripts” section in package.json file</b><br><br><br><center><img style="height:300px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191001190303/Screenshot-4117.png"></center></li><br>
+                  <li><b>Then to start the server by running the below command</b><br><p class="container" style="font-family:monospace;">npm start</p><br><center><img style="height:200px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004125543/3910.png"></center></li><br>
+                  <li><b>Now you can open the broswer and get the output of the running server.</b><br><p class="container" style="font-family:monospace;">db.collection_name.find({Name : "Klaus"}).forEach(printjson);</p><br><center><img style="height:300px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191001190807/Screenshot-4510.png"></center></li>
+                </ol>
+              </div>
+        </section>
+        </div>
+        <div class="card">
+          <section class="main-section" id="React_JS">
+            <header><h2>React JS<h2></header>
+            <code></code>
+            <h4>Front-End Framework</h4>
+            <center><div class="fakeimg" style="height:300px;"><center><img src="images/React.png"></center></div></center>
+            <p>React is a JavaScript library that is used for building user interfaces. React is used for the development of single-page applications and mobile applications because of its ability to handle rapidly changing data. React allows users to code in JavasScript and create UI components.</p>
+            <br><b>Why use React?</b>
+            <ul>
+              <li>Virtual DOM – A virtual DOM object is a representation of a DOM object. Virtual DOM is actually a copy of the original DOM. Any modification in the web application causes the entire UI to re-render the virtual DOM. Then the difference between the original DOM and this virtual DOM is compared and the changes are made accordingly to the original DOM.</li>
+              <li>JSX – Stands for JavaScript XML. It is an HTML/XML JavaScript Extension which is used in React. Makes it easier and simpler to write React components.</li>
+              <li>Components – ReactJS supports Components. Components are the building blocks of UI wherein each component has a logic and contributes to the overall UI. These components also promote code reusability and make the overall web application easier to understand.</li>
+              <li>High Performance – Features like Virtual DOM, JSX and Components makes it much faster than the rest of the frameworks out there.</li>
+              <li>Developing Android/Ios Apps – With React Native you can easily code Android-based or IOS-Based apps with just the knowledge of JavaScript and ReactJS.</li>
+            </ul>
+            <br><b>Example:</b>
+            <div class="Example">
+              <ol>
+                <li><b>You can start your react application by first installing “create-react-app” using npm or yarn.</b><br><p class="container" style="font-family:monospace;">npm install create-react-app --global</p><br>OR<br><p class="container" style="font-family:monospace;">yarn global add create-react-app</p></li><br>
+                <li><b>After that you can create a new react app by using.</b><br><p class="container" style="font-family:monospace;">create-react-app app_name</p></li><br>
+                <li><b>Then navigate into the “app_name” folder and type yarn start or npm start to start your application.</b><br><br><br><center><img style="height:320px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004130145/4111.png"></center></li><br>
+                <li><b>A typical React application looks like this:</b><br><br><br><center><img style="height:350px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004130319/4210.png"></center></li><br>
+              </ol>
+            </div>
+            <br><b>A Small React Example:</b>
+            <div class="Example">
+              <ol>
+                <li><b>Update index.js file</b><br><p class="container" style="font-family:monospace;">ReactDOM.render(
+                    <br>Hello DEVELOPERS!!,
+                    <br>document.getElementById('root')
+                    <br>);
+                </p></li>
+                <li><b>Use the below commadns to run your application.</b><br><p class="container" style="font-family:monospace;">npm start</p><br>OR<br><p class="container" style="font-family:monospace;">yarn start</p><br><br><br><center><img style="height:350px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191001192811/Screenshot-5010.png"></center></li>
+
+             </ol>
+            </div>
+        </section>
+        </div>
+        <div class="card">
+          <section class="main-section" id="Node_JS">
+            <header><h2>Node JS<h2></header>
+            <code></code>
+            <h4>JS Runtime Environment</h4>
+            <center><div class="fakeimg" style="height:300px;"><center><img src="images/Node.jpeg"></center></div></center>
+            <p>Node.js provides a JavaScript Environment which allows the user to run their code on the server (outside the browser). Node pack manager i.e. npm allows the user to choose from thousands of free packages (node modules) to download.</p>
+            <br><b>Why use Node.JS?</b>
+            <ul>
+              <li>Open source JavaScript Runtime Environment</li>
+              <li>Single threading – Follows a single threaded model.</li>
+              <li>Data Streaming</li>
+              <li>Fast – Built on Google Chrome’s JavaScript Engine, Node.js has a fast code execution.</li>
+              <li>Highly Scalable</li>
+            </ul>
+            <br><b>Example:</b>
+            <div class="Example">
+              <ol>
+                <li><b>Initialize a Node.js application by typing runing the below command in the command window. Accept the standard settings.</b><br><p class="container" style="font-family:monospace;">npm init</p></li><br>
+                <li><b>Create a file named index.js. A basic Node.js example to compute the perimeter & area of a rectangle.</b><br><p class="container" style="font-family:monospace;">
+                      <br>var rectangle = {
+                      <br>    perimeter: (x, y) => (2*(x+y)),
+                      <br>    area: (x, y) => (x*y)
+                      <br>};
+
+                      <br>function Rectangle(l, b) {
+                      <br>console.log("A rectangle with l = " + l + " and b = " + b);
+
+                      <br>if (l <= 0 || b <= 0) {
+                      <br>console.log("Error! Rectangle's length & breadth should be greater than 0:  l = "
+                      <br>+ l + ",  and b = " + b);
+                      <br>}
+                      <br>else {
+                      <br>console.log("Area of the rectangle: " + rectangle.area(l, b));
+                      <br>console.log("Perimeter of the rectangle: " + rectangle.perimeter(l, b));
+                      <br>}
+                      <br>}
+                      <br>
+                      <br>Rectangle(1, 8);
+                      <br>Rectangle(3, 12);
+                      <br>Rectangle(-6, 3);
+                    </p></li><br>
+                <li><b>Run the node application by running the below command in the command window.</b><br><p class="container" style="font-family:monospace;">npm start</p><br><br><br><center><img style="height:320px;width:600px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20191004131603/4310.png"></center></li><br>
+              </ol>
+            </div>
+        </section>
+        </div>
+        <div class="footer" id="contactus">
+          <h4>Thank you for visiting the Website if any Feedback Email to:<a href="#">basharul3636@gmail.com</a><br>Copyright since 1999,All Rights Reserved</h4>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
